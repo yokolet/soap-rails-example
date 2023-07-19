@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample SOAP app
 
-Things you may want to cover:
+* Ruby version: 3.2.1
+* Rails version: 7.0.4.2
 
-* Ruby version
+#### What is this
 
-* System dependencies
+This is just an idea of SOAP request and response handling.
+The app uses Savon [https://www.savonrb.com/](https://www.savonrb.com/) for a
+SOAP client.
 
-* Configuration
+The app is not tested yet. It should have a log of problems.
+It has a bare bone implementation only.
 
-* Database creation
+#### How to do
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- SOAP client: app/controllers/application_controller.rb
+  - the client instance is created in the application controller
+- Request/Response handling: app/controllers/airbag_controller.rb
+  - the get method making an airbags_get request
+  - the response handling snippet is there
